@@ -1,0 +1,56 @@
+.m-uvl-tip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-text-size-adjust: none;
+    font-family: Helvetica, sans-serif, STHeiTi;
+}
+
+.vi .m-uvl-tip {
+    font-family: "Times new roman";
+}
+
+.m-uvl-tip .lay {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 262px;
+    height: 409px
+}
+
+.m-uvl-tip .lay img {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0
+}
+
+.m-uvl-tip .note {
+    float: right;
+    width: 230px;
+    margin: 15% 38px 0 0;
+    line-height: 20px
+}
+
+.m-uvl-tip h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+    font-weight: 400
+}
+
+.m-uvl-tip p {
+    font-size: 14px;
+    color: #444;
+    margin: 0
+}
+
+.m-uvl-tip .s-fc5 {
+    color: #d10303
+}
+
+body.vi {
+    font-family: "Times new roman";
+}

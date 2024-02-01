@@ -1,0 +1,120 @@
+/* H5æ–°å¢žè¯­è¨€åˆ‡æ¢ */
+#language-toggle {
+    position: relative;
+    cursor: pointer;
+}
+
+#language-options {
+    position: absolute;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    display: none;
+    flex-direction: column;
+    width: 150px;
+    text-align: left;
+    top: 105px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+}
+.rHeight #language-options {
+    top: 70px;
+}
+
+#language-options ::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #fff;
+}
+
+#language-options .lang-item {
+    line-height: 30px;
+    color: #000;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+#language-options .lang-item.active,
+#language-options .lang-item:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: #79E05D;
+}
+
+
+
+/* H5å¼¹çª—åˆ‡æ¢è¯­è¨€ */
+#popupContainer {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: .2rem .2rem 0 0;
+    background: #ffffff;
+    box-shadow: -0px -0px 6px #c9c9c9,
+        -0px -0px 16px #ffffff;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+.popupContent {
+    padding: .2rem;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.popupContent .title {
+    font-size: .25rem;
+    line-height: .25rem;
+    text-align: center;
+    padding-bottom: .2rem;
+    color: #00295f;
+    border-bottom: .01rem solid #eee;
+}
+.popupContent div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.popupContent .lang-item {
+    font-size: .28rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupContent .lang-item.active {
+    color: #79E05D;
+}
+
+#showPopup {
+    font-size: .2rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#closePopup {
+    margin-top: .2rem;
+    font-size: .2rem;
+    position: absolute;
+    right: .2rem;
+    top: 0;
+    background: transparent;
+    background: url('../images/icon-close.png') no-repeat;
+    background-size: 100% 100%;
+    width: .3rem;
+    height: .3rem;
+    border: none;
+}

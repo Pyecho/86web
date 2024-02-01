@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <link rel="stylesheet" href="css/download.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <title>86-安全加密即时聊天工具</title>
+  </head>
+
+  <body>
+    <div class="m-uvl m-uvl-tip">
+      <div class="lay">
+        <div class="note">
+          <h3>链接打不开？</h3>
+          <p>
+            请点击右上角<br />选择
+            <span class="s-fc5">“在浏览器中打开”</span>
+          </p>
+        </div>
+        <img src="./images/llq.png" />
+      </div>
+    </div>
+    <script src="./86.config.js"></script>
+    <script>
+      var u = navigator.userAgent;
+      if (-1 < u.indexOf("Android") || -1 < u.indexOf("Linux"))
+        if ("micromessenger" == u.toLowerCase().match(/MicroMessenger/i));
+        else {
+          window.location.href = app.android;
+        }
+      else
+        -1 < u.indexOf("iPhone") && (window.location.href = app.ios_jump);
+    </script>
+  </body>
+</html>
