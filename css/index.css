@@ -1373,7 +1373,7 @@ a {
   .en .main-wrapper .banner .bg .description {
     font-size: 0.2rem;
   }
-
+/*
   .en .main-wrapper .Index-inner #block-1 .Img {
     background: url(../images/en-w-1.jpg) center no-repeat;
   }
@@ -1384,7 +1384,7 @@ a {
 
   .en .main-wrapper .Index-inner #block-3 .Img {
     background: url(../images/en-w-3.jpg) center no-repeat;
-  }
+  }*/
 
   .vi .main-wrapper .Index-inner #block-1 .Img {
     background: url(../images/vi-w-1.jpg) center no-repeat;
